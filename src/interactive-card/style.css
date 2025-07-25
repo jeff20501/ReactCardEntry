@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Young+Serif&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-inline-size: 1440px;
+    font-family: 'Space Grotesk';
+    background-color: hsl(270, 3%, 87%);
+    color: hsl(0, 100%, 100%);
+    background-image: url('./components/images/bg-main-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 50px;
+    @media(width<850px){
+        background-image: url('./components/images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        background-size:contain;
+        padding: 0;
+    }
+}
+
+img{
+    display: block;
+    max-inline-size: 100%;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    max-inline-size:1200px;
+    @media(width<850px){
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+}
+
+.front{
+    margin-bottom: 40px;
+    margin-left: 10px;
+    position: relative;
+    @media(width<850px){
+        margin-top: -78px;
+        z-index: 1;
+    }
+
+}
+
+.back{
+    margin-left: 50px;
+    position: relative;
+    @media(width<850px){
+        margin-left: 70px;
+        z-index: -1;
+    }
+}
+
+.card{
+    max-inline-size: 500px;
+    display: flex;
+    flex-direction: column;
+    @media(width<850px){
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+
+.cardLogo{
+    position: absolute;
+    top:6%;
+    left:5%
+
+}
+
+.card_number{
+    position: absolute;
+    top:40%;
+    max-inline-size: 100%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    left: 10%;
+    @media (width<850px){
+        font-size: 1.3rem;
+    }
+    
+}
+
+.Cardholder{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    
+}
+
+.month_Year{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    letter-spacing: 2px;
+    
+}
+
+
+
+.card-info-cvc{
+    position: absolute;
+    right: 13%;
+    bottom: 43%;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+input{
+    font-family: 'Space Grotesk';
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.inputs{
+    color: hsl(278, 68%, 11%);
+    font-weight: 600;
+    letter-spacing: 2px;
+    max-inline-size: 650px;
+    
+}
+
+
+
+.inputForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm input{
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    block-size: 40px;
+}
+
+.inputForm input:focus-visible{
+    outline-color: hsl(249, 99%, 64%);
+    outline-offset: 2px;
+}
+
+
+.timeline{
+    display: flex;
+    gap:10px;
+}
+
+.timeline input{
+    max-inline-size: 50%;
+}
+
+
+.confirm-btn{
+    font-family: 'Space Grotesk';
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 100%, 100%);
+    block-size: 50px;
+    max-inline-size:  100%;
+    border-radius: 10px;
+    transition: .7s ease-in-out;
+}
+
+.confirm-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px black;
+}
