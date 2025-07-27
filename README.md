@@ -76,13 +76,13 @@ Solution: Introduced a ```formSubmitted``` state to control rendering.
 ### Development Process Summary
 #### Set Up Component Structure:
 - Created a Page component that contains two child components: ```Card``` (for UI preview) and ```Inputs``` (for form fields).
-- Defined a central state object info in Page using useState to hold card-related fields (```Cardholder```, ```card_number```, ```month```, ```Year```, ```cvc```).
+- Defined a central state object info in ```Page``` using ```useState``` to hold card-related fields (```Cardholder```, ```card_number```, ```month```, ```Year```, ```cvc```).
 
 #### Handled Input Changes:
-- Implemented ```handleChange``` to update info state based on form inputs.
+- Implemented ```handleChange``` to update ```info``` state based on form inputs.
 - Applied formatting for ```card_number```:
-  1. Removed all non-digit characters using .replace(/\D/g, "").
-  2. Limited to 16 digits using .slice(0, 16).
+  1. Removed all non-digit characters using ```.replace(/\D/g, "")```.
+  2. Limited to 16 digits using ```.slice(0, 16)```.
   3. Formatted into ```0000 0000 0000 0000``` style using ```.replace(/(\d{4})(?=\d)/g, "$1 ")```.
 
 #### Prevented Redundant State Updates:
