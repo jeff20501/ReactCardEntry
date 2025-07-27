@@ -67,7 +67,7 @@ Solution: Introduced a ```formSubmitted``` state to control rendering.
 ![](./screenshots/3.jpeg)
 
 ## Links
-- [Live Site]()
+- [Live Site](https://react-cardentry.netlify.app/)
 - [Github Repo](https://github.com/jeff20501/ReactCardEntry)
 
 
