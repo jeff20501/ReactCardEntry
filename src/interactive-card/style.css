@@ -140,15 +140,18 @@ input{
 }
 
 .inputForm input{
-    margin-bottom: 30px;
     border: none;
     border-radius: 10px;
     block-size: 40px;
 }
 
+label{
+    margin-top: 20px;
+}
+
 .inputForm input:focus-visible{
     outline-color: hsl(249, 99%, 64%);
-    outline-offset: 2px;
+    outline-offset: 1px;
 }
 
 
@@ -163,6 +166,7 @@ input{
 
 
 .confirm-btn{
+    margin-top: 20px;
     font-family: 'Space Grotesk';
     border: none;
     background-color: hsl(278, 68%, 11%);
@@ -177,4 +181,39 @@ input{
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 5px 5px 10px black;
+}
+
+.errors{
+    margin-bottom: 20px;
+    color: red;
+    padding: 0;
+    font-size: .8rem;
+}
+
+.complete{
+    justify-items: center;
+    line-height: 2.5rem;
+    max-inline-size: 350px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.complete img{
+    max-inline-size: 100px;
+    margin-bottom: 20px;
+    
+}
+
+.complete h2{
+    color: hsl(278, 68%, 11%);
+    margin-bottom: 20px;
+}
+
+.complete p{
+    color:  hsl(278, 68%, 11%);
+    margin-bottom: 20px;
+}
+
+.complete button{
+    width: 100%;
 }
