@@ -1,5 +1,5 @@
 # React + Vite
-## 💲 Credit Card Form Application
+## 💲 ReactCardEntry
 ## Table of contents
 
 - [Overview](#overview)
